@@ -10,8 +10,11 @@ public class Marker {
         public void fillMarker(){
             System.out.println("Fill Marker");
         }
-        public Marker(){
-            System.out.println("Marker object Created");
+        public Marker(String cmp,String clr,String t,double p){
+            compary=cmp;
+            color=clr;
+            typr=t;
+            price=p;
         }
         public void print(){
             System.out.println(compary);
@@ -21,15 +24,10 @@ public class Marker {
         }
 
     public static void main(String[] args) {
-        Marker m1 = new Marker();
+        Marker m2 = new Marker("Natraj","Black","Black pen",127.00);
 
-        m1.color="blue";
-        m1.compary="Apsara";
-        m1.price=20;
-        m1.typr="Blue Marker";
-
-        m1.fillMarker();
-        m1.print();
+        m2.fillMarker();
+        m2.print();
 
     }
 }
