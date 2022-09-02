@@ -12,9 +12,9 @@ public class EvenOdd {
             int i = 10;
 
             if (i % 2 == 0) {
-                System.out.println("even");
+                System.out.println("even"+i);
             } else {
-                System.out.println("odd");
+                System.out.println("odd"+i);
 
             }
 
