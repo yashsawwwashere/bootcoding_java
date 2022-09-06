@@ -1,5 +1,7 @@
 package com.bootcoding.oops;
 
+import java.sql.SQLOutput;
+
 public class Book {
     String title;
     String description;
@@ -55,6 +57,17 @@ public class Book {
     public void sell(){
         System.out.println("sell");
 
+    }
+
+    public Book() {
+        System.out.println("prashil");;
+    }
+
+    public String book(String a){
+        String name=a;
+
+
+        return a;
     }
 
 }
