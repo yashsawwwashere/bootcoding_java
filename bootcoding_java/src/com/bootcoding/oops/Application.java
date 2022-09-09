@@ -43,7 +43,12 @@ public class Application {
 
 
 
+       Dog d=new Dog();
+       d.bark();
 
+     //  d.run();
+      // d.sleep();
+       d.eat();
 
 
 
