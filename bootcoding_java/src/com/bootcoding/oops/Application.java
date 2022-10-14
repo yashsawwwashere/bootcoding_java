@@ -34,7 +34,7 @@ public class Application {
         c.setPrice(2000);
         c.setWheel(4);
         c.setType("kid cycle");
-        System.out.println(c.getBrakes());
+        System.out.println(c);
         System.out.println(c.getCompany());
         System.out.println(c.getTyers());
         System.out.println(c.getWheel());
@@ -47,7 +47,7 @@ public class Application {
        d.bark();
 
      //  d.run();
-      // d.sleep();
+       d.sleep();
        d.eat();
 
 

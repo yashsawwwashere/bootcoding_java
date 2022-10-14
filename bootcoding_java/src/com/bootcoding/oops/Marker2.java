@@ -6,6 +6,8 @@ public class Marker2 {
     String typr;
     double price;
 
+    long id;
+
 
 
 
@@ -40,6 +42,14 @@ public class Marker2 {
 
     public double getPrice() {
         return price;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public  Marker2() {

@@ -3,6 +3,7 @@ package com.bootcoding.oops;
 import java.sql.SQLOutput;
 
 public class Book {
+    long id;
     String title;
     String description;
     String author;

@@ -7,7 +7,7 @@ public  class Animal {
     public void run(){
         System.out.println("bhag bsdk");
     }
-   private void sleep(){
+   public void sleep(){
        System.out.println("so ja chup chap");
    }
 
