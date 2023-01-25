@@ -21,7 +21,7 @@ public class GFG {
     }
 
     // Driver code
-    public static void main(String[] args)
+    public static void   main(String[] args)
     {
         String input = "MONDAY HAI KY ";
         GFG gfg = new GFG();

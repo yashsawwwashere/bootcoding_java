@@ -24,6 +24,9 @@ public class EvenNo {
             }
 
         }
+        //[1,2,1] -> [1,2,1,1,2,1]
+        // INT B = new int [ a.length * 2];
+        // 
 
 
 
