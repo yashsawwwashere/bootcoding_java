@@ -34,7 +34,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] a={3,2,4};
+        int[] a={9,9,9};
 
         Solution.plusOne(a);
 

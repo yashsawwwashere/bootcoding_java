@@ -3,10 +3,7 @@ package com.bootcoding.Collection;
 import com.bootcoding.oops.Marker;
 import com.bootcoding.oops.Marker2;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /*
 *
@@ -36,29 +33,42 @@ public class MarkerCollection {
             System.out.println("type:" + m.getTypr());
             System.out.println("price:" + m.getPrice());
         }
+
     }
+    public class RandomNumberGenerator {
+        public static int generateNumber(int bound) {
 
-    public static void main(String[] args) {
+            Random random = new Random();
 
-        MarkerCollection m=new MarkerCollection();
+            int i = random.nextInt(bound);
 
-        long st = Calendar.getInstance().getTimeInMillis();
-        for(int i=1;i<=100000;i++){
-
-            Marker2 m2=new Marker2();
-            m2.setId(i);
-            m2.setCompary("camlin"+i);
-            m2.setColor("white"+i);
-            m2.setTypr("blue");
-            m2.setPrice((i+100)*2.5);
-
-
-            m.addMarker(m2); // storing each Marker instance
-
+            return i;
         }
 
-        m.printMarker();
-        System.out.println("Total Time " + (Calendar.getInstance().getTimeInMillis() - st));
-    }
-}
+        public static void main(String[] args) {
+
+            MarkerCollection m = new MarkerCollection();
+            String[] colours = {"white", "black", "red","green"};
+
+
+
+            for (int i = 1; i <= 100000; i++) {
+                int num = generateNumber(colours.length);
+                Marker2 m2 = new Marker2();
+                m2.setId(i);
+                m2.setCompary("camlin" + i);
+
+                m2.setColor(colours[num]);
+                m2.setTypr("blue");
+                m2.setPrice((i + 100) * 2.5);
+
+
+                m.addMarker(m2); // storing each Marker instance
+
+            }
+
+            m.printMarker();
+
+        }
+    }}
 

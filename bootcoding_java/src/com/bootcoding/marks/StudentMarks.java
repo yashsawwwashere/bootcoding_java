@@ -45,6 +45,7 @@ public class StudentMarks {
     public int generateRandomMarks(){
         Random random = new Random();
         return random.nextInt(35,99);
+
     }
 
 

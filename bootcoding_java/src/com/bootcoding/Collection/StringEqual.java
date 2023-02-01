@@ -1,6 +1,9 @@
 package com.bootcoding.Collection;
 
-public class StringEqual {
+public class
+
+
+StringEqual {
     public static void main(String[] args) {
 
 
