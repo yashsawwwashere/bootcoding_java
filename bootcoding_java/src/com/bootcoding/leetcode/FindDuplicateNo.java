@@ -19,6 +19,5 @@ public class FindDuplicateNo {
             }
         }return 0;
 
-
     }
 }
