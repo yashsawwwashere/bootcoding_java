@@ -22,6 +22,7 @@ public class StudentMarks {
 
         return name[bound];
 
+
     }
 
     public void writeToFile(List<String>data) {
